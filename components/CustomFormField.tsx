@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { E164Number } from "libphonenumber-js/core";
+// import { E164Number } from "libphonenumber-js/core";
 import Image from "next/image";
 import ReactDatePicker from "react-datepicker";
 import { Control } from "react-hook-form";
@@ -84,7 +84,7 @@ const RenderInput = ({ field, props }: { field: any; props: CustomProps }) => {
             placeholder={props.placeholder}
             international
             withCountryCallingCode
-            value={field.value as E164Number | undefined}
+            value={field.value}
             onChange={field.onChange}
             className="input-phone"
           />
